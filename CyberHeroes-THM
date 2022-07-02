@@ -1,0 +1,6 @@
+This is a write-up for a room named CyberHeroes on TryHackMe.
+
+I use "curl -i webpage.com" to examine the source code whenever I want to enumerate a web server, and this time I discovered credentials there.
+However, reversing a string is possible with the function Reversestring().
+Reversestring(Hello), for instance, returns "olleH". 
+Username wasn't reversed around. But because the password was reversed, all I had to do was rearrange it to gain access.
