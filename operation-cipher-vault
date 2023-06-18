@@ -1,0 +1,7 @@
+platform: bsides indore CTF
+challenge type: web
+challenge name: operation-cipher-vault
+
+there was an input field where I had to provide a password and the app would return results based on that password. I wasn't sure what kind of results to expect, so I tried a random password "password123". The app returned "length too short" as a response.
+I then decided to test the app with a long password to see if it would return "length too long" or something else. However, the app returned a hash every time I submitted a long password. This made me curious about the minimum length required for a good password.
+I kept adjusting the length of the password until I reached the minimum required length, and that's when I finally got the flag!.
